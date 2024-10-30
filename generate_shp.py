@@ -45,9 +45,9 @@ def write_poly(lonlat, shape_file):
 if __name__ == "__main__":
     import argparse
     parser = argparse.ArgumentParser()
-    parser.add_argument("--poly_file", type=str, help=".txt file", default="poly.txt")
-    parser.add_argument("--shape_file", type=str, help="output .shp file", default="roi.shp")
-    parser.add_argument("--meta_file", type=str, help="metadata.xml", default="metadata.xml")
+    parser.add_argument("--poly_file", type=str, help=".txt file", default="data/poly.txt")
+    parser.add_argument("--shape_file", type=str, help="output .shp file", default="output/roi.shp")
+    parser.add_argument("--meta_file", type=str, help="metadata.xml", default="data/metadata.xml")
     args = parser.parse_args()
 
     # read points
